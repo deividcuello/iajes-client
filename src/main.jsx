@@ -64,15 +64,15 @@ async function checkAdmin() {
     const res = await getUsers({isAdmin: false, page:1})
     if (res.data.count == 0) { 
       let formData = new FormData();
-      formData.append("email", 'enmanuel1518@gmail.com');
-      formData.append("username", 'enmaft');
-      formData.append("password", 'eftadmin');
+      formData.append("email", 'allammorales@gmail.com');
+      formData.append("username", 'allanmorales');
+      formData.append("password", 'adminadmin');
       formData.append("isDelete", false);
       formData.append("adminAccount", true);
-      formData.append("name", 'Enmanuel F.');
-      formData.append("university", 'IEESL');
+      formData.append("name", 'Allan Morales');
+      formData.append("university", 'Santa Clara University');
       formData.append("phone", '000-000-0000');
-      formData.append("department", 'DeVops');
+      formData.append("department", 'Frugal Innovation');
       
       let newUser = fetch('https://deividcuello.pythonanywhere.com/api/auth/register', {
         credentials: "include",
