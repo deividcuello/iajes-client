@@ -32,7 +32,7 @@ function Navbar() {
         const res = await checkLogin()
         setUserInfo(res.data.user)
       } catch (error) {
-        console.clear()
+        console.log(error)
       }
     }
 
@@ -41,7 +41,7 @@ function Navbar() {
         const res = await checkLogin();
         setUserInfo(res.data.user);
       } catch (error) {
-        console.clear()
+        console.log(error)
       }
     }
 
