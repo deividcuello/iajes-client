@@ -45,7 +45,7 @@ function CentersAdmin() {
                 .fill(start)
                 .map((x, y) => x + y * step);
         } catch (err) {
-            console.clear();
+            console.log(err);
         }
     };
 
@@ -245,7 +245,7 @@ function CentersAdmin() {
                     (response) => window.location.reload(false)
                 )
                 .catch((error) =>
-                    console.clear()
+                    console.log(error)
                 );
         } else if (action.edit) {
             formData.append("hidden", action.hidden);
@@ -265,7 +265,7 @@ function CentersAdmin() {
                 .then((response) => window.location.reload(false)
                 )
                 .catch((error) =>
-                    console.clear()
+                    console.log(error)
                 );
         }
     };

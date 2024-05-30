@@ -53,7 +53,7 @@ function SubmitProjectAdmin() {
                 .fill(start)
                 .map((x, y) => x + y * step);
         } catch (err) {
-            console.clear();
+            console.log(error)
         }
     };
 
@@ -290,7 +290,7 @@ function SubmitProjectAdmin() {
                 .then((res) => window.location.reload(false)
                 )
                 .catch((error) =>
-                    console.clear()
+                    console.log(error)
                 );
         }
         else if (action.edit) {
@@ -311,7 +311,7 @@ function SubmitProjectAdmin() {
                 .then((res) => window.location.reload(false)
                 )
                 .catch((error) =>
-                    console.clear()
+                    console.log(error)
                 );
         }
     };

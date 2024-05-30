@@ -22,7 +22,7 @@ function Login() {
             toast.error(`Incorrect data`, {
                 position: "top-center"
             })
-            console.clear()
+            console.log(error)
         }
     }
     return (

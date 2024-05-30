@@ -2,7 +2,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
-import interceptor from "./interceptor";
+// import interceptor from "./interceptor";
 import Homepage from "./pages/homepage/homepage";
 import Layout from "./components/layout/Layout";
 import NotFound from "./pages/not-found/not-found";
@@ -82,7 +82,7 @@ async function checkAdmin() {
       })
     }
   } catch (error) {
-    // console.clear()
+    console.log(error)
   }
 }
 
@@ -93,7 +93,7 @@ async function isLogged() {
     const res = await checkLogin();
     userInfo = res.data.user.adminAccount;
   } catch (error) {
-    // console.clear()
+    console.log(err)
     userInfo = false
   }
 }

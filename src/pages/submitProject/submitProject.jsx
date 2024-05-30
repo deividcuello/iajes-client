@@ -62,13 +62,13 @@ function SubmitProject() {
                     setIsWorking(res.data.isWorking)
                     setKeywords(res.data.keywords.split(", "))
                 } else {
-                    console.clear()
+                    console.log()
                 }
 
 
 
             } catch (error) {
-                console.clear()
+                console.log(error)
             }
 
         }
@@ -188,7 +188,7 @@ function SubmitProject() {
                 .then((res) => window.location.href = '/my-projects'
                 )
                 .catch((error) =>
-                    console.clear()
+                    console.log(error)
                 );
         }
     };

@@ -32,7 +32,7 @@ function Energy() {
         .fill(start)
         .map((x, y) => x + y * step);
     } catch (err) {
-      console.clear();
+      console.log(err)
     }
   };
 

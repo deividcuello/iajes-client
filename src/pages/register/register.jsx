@@ -63,7 +63,7 @@ function Register() {
                 toast.error(`Error`, {
                     position: "top-center"
                 })
-                console.clear()
+                console.log(error)
             }
         }
         if (!email) {
@@ -126,7 +126,7 @@ function Register() {
 
             // const id = res1.data.users[0].id;
         } catch (error) {
-            console.clear()
+            console.log(error)
 
         }
         if (!checkEmail()) {

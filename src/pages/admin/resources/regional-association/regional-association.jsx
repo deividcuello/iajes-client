@@ -42,7 +42,7 @@ function RegionalAssociationAdmin() {
                 .fill(start)
                 .map((x, y) => x + y * step);
         } catch (err) {
-            console.clear();
+            console.log(error)
         }
     };
 
@@ -209,7 +209,7 @@ function RegionalAssociationAdmin() {
                 })
                 )
                 .catch((error) =>
-                    console.clear()
+                    console.log(error)
                 );
         }
     };

@@ -42,7 +42,7 @@ function DocumentsAdmin() {
                 .fill(start)
                 .map((x, y) => x + y * step);
         } catch (err) {
-            console.clear();
+            console.log(error);
         }
     };
 
@@ -219,7 +219,7 @@ function DocumentsAdmin() {
                 .then((res) => window.location.reload(false)
                 )
                 .catch((error) =>
-                    console.clear()
+                    console.log(error)
                 );
         } else if (action.edit) {
             formData.append("hidden", action.hidden);
@@ -241,7 +241,7 @@ function DocumentsAdmin() {
                 .then((res) => window.location.reload(false)
                 )
                 .catch((error) =>
-                    console.clear()
+                    console.log(error)
                 );
         }
     };

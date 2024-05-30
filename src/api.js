@@ -14,7 +14,7 @@ export const checkLogin = async () => {
   try {   
     const res = await axios.get("https://deividcuello.pythonanywhere.com/api/auth/user", { headers: {"Authorization" : `Bearer ${localStorage.getItem("accessToken")}`} }).then(response => {response.response.status != 401 ? response : 'console.clear()'});
   } catch (error) {
-    console.clear()
+    console.log(error)
     return axios.get("https://deividcuello.pythonanywhere.com/api/auth/user", { headers: {"Authorization" : `Bearer ${localStorage.getItem("accessToken")}`} })
   }
 };
@@ -70,7 +70,7 @@ export const getToken = async (user) => {
   try {
     return axios.post('https://deividcuello.pythonanywhere.com/api/auth/token/',user);
   } catch (error) {
-    console.clear()
+    console.log(error)
   }
 };
 
