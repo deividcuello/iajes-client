@@ -235,7 +235,7 @@ function CentersAdmin() {
 
         if (action.create) {
             formData.append("hidden", true);
-            fetch('http://localhost:8000/api/centers/', {
+            fetch('https://deividcuello.pythonanywhere.com/api/centers/', {
                 credentials: "include",
                 headers: { "X-CSRFToken": Cookies.get("csrftoken") },
                 method: "POST",
@@ -256,7 +256,7 @@ function CentersAdmin() {
             };
             formData.append("isImageUrl", tempAction.isImageUrl);
 
-            fetch(`http://localhost:8000/api/centers/${action.edit}/`, {
+            fetch(`https://deividcuello.pythonanywhere.com/api/centers/${action.edit}/`, {
                 credentials: "include",
                 headers: { "X-CSRFToken": Cookies.get("csrftoken") },
                 method: "PUT",
@@ -274,7 +274,7 @@ function CentersAdmin() {
         const documentData = await getCenter({ id: id });
         const data = documentData.data;
         let list = new DataTransfer();
-        let file = new File(["content"], `http://localhost:8000${data.cover_url}`);
+        let file = new File(["content"], `https://deividcuello.pythonanywhere.com${data.cover_url}`);
         list.items.add(file);
         let myFileList = list.files;
 
@@ -290,7 +290,7 @@ function CentersAdmin() {
             isImageUrl: file.name,
         });
 
-        fetch(`http://localhost:8000/api/centers/${id}/`, {
+        fetch(`https://deividcuello.pythonanywhere.com/api/centers/${id}/`, {
             credentials: "include",
             headers: {
                 "X-CSRFToken": Cookies.get("csrftoken"),
@@ -320,7 +320,7 @@ function CentersAdmin() {
         setPhone(data.phone);
 
         let list = new DataTransfer();
-        let file = new File(["content"], `http://localhost:8000${data.cover_url}`);
+        let file = new File(["content"], `https://deividcuello.pythonanywhere.com${data.cover_url}`);
         list.items.add(file);
         let myFileList = list.files;
         imageInput.files = myFileList;
