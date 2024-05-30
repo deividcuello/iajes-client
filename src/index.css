@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bolder;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18.72px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 13.28px;
+  }
+  h6 {
+    font-size: 10.72px;
+  }
+}
+
+::-webkit-scrollbar {
+  @apply w-2 h-2
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-white
+}
+
+.dark ::-webkit-scrollbar-track {
+  @apply bg-gray-950
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  @apply bg-gray-700
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-darkPrimary
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-800
+}
+
+input:not([type="submit"]), textarea{
+  @apply focus:outline-none dark:bg-gray-950
+}
+
+textarea{
+  @apply resize-none
+}
+
+li{
+  @apply px-3 py-3 text-nowrap mt-2
+}
+
+li:has(.active){
+  @apply bg-darkPrimary dark:bg-gray-950 pl-2
+}
+
+.btn{
+  @apply px-2 py-1 rounded-xl text-gray-950 font-medium
+}
+
+table td{
+  @apply py-1 px-2
+}
+
+table th{
+  @apply px-2
+}
+
+.form{
+  @apply w-96
+}
+
+.form input, textarea {
+  @apply py-1 px-2 rounded-xl
+}
+
+.form span.code{
+  @apply text-sm
+}
+
+.form input[type=submit] {
+  @apply bg-darkPrimary dark:bg-primary font-semibold cursor-pointer flex justify-center items-center
+}
+
+.news-container .content ol {
+  list-style: decimal;
+}
+
+.news-container .content ul {
+  list-style: disc;
+}
+
+.news-container .content table { 
+  border-collapse: separate;
+  border-radius: 4px;
+}
+
+.news-container .content blockquote{
+  margin: none;
+  font-style: italic;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.news-container .content blockquote::before{
+  position: absolute;
+  content: '';
+  border: 2px solid rgb(182, 182, 182);
+  height: 100%;
+  left: 0;
+}
+
+.pagination {
+  @apply flex mt-5 items-center justify-center gap-4;
+}
+
+.pagination li > a{
+  @apply border dark:border-gray-900 rounded-full h-10 w-10 flex items-center justify-center py-2 px-5 cursor-pointer text-right font-semibold
+}
+
+.pagination .active-page{
+  @apply bg-primary text-white
+}
+
+.ck-toolbar {
+  @apply dark:!bg-gray-950 dark:!border-gray-900 dark:!text-white;
+}
+
+.ck.ck-widget__selection-handle{
+  display: none;  
+}
+
+.ck.ck-widget__type-around__button{
+  display: none;
+}
+
+.ck-toolbar__separator {
+  @apply dark:!bg-gray-900;
+}
+
+.ck-toolbar svg {
+  @apply dark:!text-white;
+}
+
+.ck-button:hover{
+  @apply dark:!bg-gray-900
+}
+
+.ck-button.ck-on{
+  @apply dark:!bg-gray-900
+}
+
+.ck-content {
+  @apply dark:!bg-gray-950 dark:!border-gray-900 break-words max-h-[calc(100vh-479.42px)] overflow-y-scroll w-full;
+}
+
+.expand-true .ck-content{
+  @apply max-h-none
+}
+
+.news-container .content thead tr th:first-child, 
+.news-container .content tbody:first-child tr:first-child td:first-child {
+  @apply rounded-tl-xl
+}
+
+.news-container .content thead tr th:last-child, 
+.news-container .content tbody:first-child tr:first-child td:last-child {
+  @apply rounded-tr-xl
+}
+
+.news-container .content, 
+.news-container .content tbody:last-child tr:last-child td:last-child {
+  @apply rounded-br-xl
+}
+
+
+.news-container .content thead tr th:last-child tr:last-child th:first-child, 
+.news-container .content tbody:last-child tr:last-child td:first-child {
+  @apply rounded-bl-xl
+}
+
+
+.news-container .content table td{
+  @apply py-2 px-4 border border-gray-600
+}
+
+.news-container .content table tr, .news-container .content th
+{
+  @apply border border-gray-600
+}
+
+.news-container .content th{
+  @apply p-2
+}
+
+.swiper-pagination-bullets:not(section.homepage .hero .swiper-pagination-bullets) {
+  display: none;
+}
+
+section.homepage .hero .swiper-button-prev,
+section.homepage .hero .swiper-button-next {
+  display: none;
+}
+
+section.homepage .hero .swiper-pagination-bullets .swiper-pagination-bullet{
+  @apply bg-white
+}
