@@ -302,7 +302,7 @@ function CentersAdmin() {
         })
             .then((response) => window.location.reload(false))
             .catch((error) =>
-                toast.error("Error occurred", { position: toast.POSITION.TOP_CENTER })
+                toast.error("Error occurred", { position: "top-center", })
             );
     }
 
