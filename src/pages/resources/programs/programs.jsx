@@ -23,7 +23,7 @@ function Programs() {
     const [textFilter, setTextFilter] = useState('');
     const [textSearchFilter, setTextSearchFilter] = useState('');
     const [isFilter, setIsFilter] = useState(false);
-    const baseCenterUrl = 'http://localhost:5173/resources/programs'
+    const baseCenterUrl = 'https://iajes-testing.netlify.app/resources/programs'
 
     function isInt(value) {
         const er = /^-?[0-9]+$/;

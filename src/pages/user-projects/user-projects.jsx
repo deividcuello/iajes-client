@@ -286,7 +286,7 @@ function UserProjects() {
                                         </div>
                                         <h4>{project.title}</h4>
                                     </div>
-                                    <Link to={`http://localhost:5173/submit-project?slug=${project.slug}`} className='bg-primary py-1 px-2 mt-1 inline-block text-white'>Edit</Link>
+                                    <Link to={`https://iajes-testing.netlify.app/submit-project?slug=${project.slug}`} className='bg-primary py-1 px-2 mt-1 inline-block text-white'>Edit</Link>
                                 </div>
                             ))}
                         </div>

@@ -19,7 +19,7 @@ function Farming() {
   const [textSearchFilter, setTextSearchFilter] = useState('');
   const [isFilter, setIsFilter] = useState(false);
 
-  const baseFarmingUrl = 'http://localhost:5173/projects/farming/'
+  const baseFarmingUrl = 'https://iajes-testing.netlify.app/projects/farming/'
   const industry = 'farming'
 
   function isInt(value) {

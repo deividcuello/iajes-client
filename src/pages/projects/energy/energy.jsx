@@ -19,7 +19,7 @@ function Energy() {
   const [textFilter, setTextFilter] = useState('');
   const [textSearchFilter, setTextSearchFilter] = useState('');
   const [isFilter, setIsFilter] = useState(false);
-  const baseEnergyUrl = 'http://localhost:5173/projects/energy/'
+  const baseEnergyUrl = 'https://iajes-testing.netlify.app/projects/energy/'
 
   function isInt(value) {
     const er = /^-?[0-9]+$/;

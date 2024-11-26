@@ -16,7 +16,7 @@ function Centers() {
   const [textSearchFilter, setTextSearchFilter] = useState('');
   const [isFilter, setIsFilter] = useState(false);
   const [page, setPage] = useState('1');
-  const baseCenterUrl = 'http://localhost:5173/resources/centers/'
+  const baseCenterUrl = 'https://iajes-testing.netlify.app/resources/centers/'
 
 
   useEffect(() => {

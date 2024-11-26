@@ -18,7 +18,7 @@ function Water() {
   const [textFilter, setTextFilter] = useState('');
   const [textSearchFilter, setTextSearchFilter] = useState('');
   const [isFilter, setIsFilter] = useState(false);
-  const baseWaterUrl = 'http://localhost:5173/projects/water/'
+  const baseWaterUrl = 'https://iajes-testing.netlify.app/projects/water/'
   const industry = 'water'
 
   function isInt(value) {

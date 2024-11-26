@@ -16,7 +16,7 @@ function Video() {
     const [textSearchFilter, setTextSearchFilter] = useState('');
     const [isFilter, setIsFilter] = useState(false);
     const [page, setPage] = useState('1');
-    const baseVideoUrl = 'http://localhost:5173/resources/videos/'
+    const baseVideoUrl = 'https://iajes-testing.netlify.app/resources/videos/'
 
 
     useEffect(() => {

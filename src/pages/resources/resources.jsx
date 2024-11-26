@@ -23,7 +23,7 @@ function Resources() {
   const [textSearchFilter, setTextSearchFilter] = useState('');
   const [isFilter, setIsFilter] = useState(false);
   const [page, setPage] = useState('1');
-  const baseHealthUrl = 'http://localhost:5173/resources/health/'
+  const baseHealthUrl = 'https://iajes-testing.netlify.app/resources/health/'
   const industry = 'health'
 
 

@@ -16,7 +16,7 @@ function Documents() {
     const [textSearchFilter, setTextSearchFilter] = useState('');
     const [isFilter, setIsFilter] = useState(false);
     const [page, setPage] = useState('1');
-    const baseDocUrl = 'http://localhost:5173/resources/documents/'
+    const baseDocUrl = 'https://iajes-testing.netlify.app/resources/documents/'
 
 
     useEffect(() => {

@@ -18,7 +18,7 @@ function Health() {
   const [textFilter, setTextFilter] = useState('');
   const [textSearchFilter, setTextSearchFilter] = useState('');
   const [isFilter, setIsFilter] = useState(false);
-  const baseHealthUrl = 'http://localhost:5173/projects/health/'
+  const baseHealthUrl = 'https://iajes-testing.netlify.app/projects/health/'
   const industry = 'health'
 
   function isInt(value) {

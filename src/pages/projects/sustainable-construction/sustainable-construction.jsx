@@ -18,7 +18,7 @@ function SustainableConstruction() {
   const [textFilter, setTextFilter] = useState('');
   const [textSearchFilter, setTextSearchFilter] = useState('');
   const [isFilter, setIsFilter] = useState(false);
-  const baseSustainableConstructionUrl = 'http://localhost:5173/projects/sustainable-construction/'
+  const baseSustainableConstructionUrl = 'https://iajes-testing.netlify.app/projects/sustainable-construction/'
   const industry = 'sustainable_construction'
 
   function isInt(value) {

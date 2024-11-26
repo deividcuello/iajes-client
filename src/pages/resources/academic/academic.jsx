@@ -27,7 +27,7 @@ function Academic() {
     const [textSearchFilter, setTextSearchFilter] = useState('');
     const [isFilter, setIsFilter] = useState(false);
     const [pageDoc, setPageDoc] = useState('1');
-    const baseDocUrl = 'http://localhost:5173/resources/academic/'
+    const baseDocUrl = 'https://iajes-testing.netlify.app/resources/academic/'
 
     function isInt(value) {
         const er = /^-?[0-9]+$/;

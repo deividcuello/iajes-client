@@ -18,7 +18,7 @@ function Education() {
   const [textFilter, setTextFilter] = useState('');
   const [textSearchFilter, setTextSearchFilter] = useState('');
   const [isFilter, setIsFilter] = useState(false);
-  const baseEducationUrl = 'http://localhost:5173/projects/education/'
+  const baseEducationUrl = 'https://iajes-testing.netlify.app/projects/education/'
   const industry = 'education'
 
   function isInt(value) {
